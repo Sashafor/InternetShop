@@ -1,10 +1,9 @@
 <div id="base">
     <div>
-        <h3>Показать только:</h3>
-        <a href="#/tvS"><button type="button">Samsung</button></a>
-        <a href="#/tvP"><button type="button">Panasonic</button></a>
-    </div> 
-    <div class="element" ng-repeat="teh in tv">
+        <h3>Показать:</h3>
+        <a href="#/telefon"><button type="button">Все телефоны</button></a>
+    </div>
+    <div class="element" ng-repeat="teh in telp">
         <div class="foto">
             <a rel="nofollow" target="_blank" href="{{ teh.Foto }}">
                 <img id="img" ng-src="{{ teh.Foto }}"/></a>

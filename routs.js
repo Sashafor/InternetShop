@@ -15,5 +15,17 @@ app.config(function ($routeProvider, $locationProvider) {
     }).when('/telefon', {
         controller: 'Telefon',
         templateUrl: 'templates/telefon.html'
+    }).when('/tvS', {
+        controller: 'TvS',
+        templateUrl: 'templates/tvS.html'
+    }).when('/telp', {
+        controller: 'TelP',
+        templateUrl: 'templates/telp.html'
+    }).when('/telpr', {
+        controller: 'TelPr',
+        templateUrl: 'templates/telpr.html'
+    }).when('/tvP', {
+        controller: 'TvP',
+        templateUrl: 'templates/tvP.html'
     })
 });

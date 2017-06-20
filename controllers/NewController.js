@@ -5,5 +5,6 @@ app.controller("New", function($scope, GET) {
     });
 
     $scope.new = [];
+    
 
 });

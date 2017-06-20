@@ -1,17 +1,14 @@
-<div style="margin-top: 10px">
-    <div class="row, col-sm-6 col-md-4" ng-repeat="teh in freeze">
+<div id="base">
+    <div class="element" ng-repeat="teh in freeze">
+        <div class="foto">
+            <a rel="nofollow" target="_blank" href="{{ teh.Foto }}">
+                <img id="img" ng-src="{{ teh.Foto }}"/></a>
+        </div>    
         <div>
-            <div class="thumbnail">
-                <a rel="nofollow" target="_blank" href="{{ teh.Foto }}">
-                    <img ng-src="{{ teh.Foto }}">
-                </a>
-                <div class="caption">
-                    <h3>{{ teh.Model }}</h3>
-                    <p style="color: crimson">ЦЕНА: {{ teh.Price }}</p>
-                    <p style="color: seagreen" data-toggle="tooltip" title="{{ teh.Harakter }}">Описание: {{ teh.Harakter | limitTo:50 }}</p>
-                </div>
-                <button style="color: darkmagenta" class="btn" ng-click="alert('Hello')">КУПИТЬ</button>
-            </div>
+            <h3>{{ teh.Model }}</h3>
+            <p style="color: crimson">ЦЕНА: {{ teh.Price }} грн.</p>
+            <p style="color: seagreen" data-toggle="tooltip" title="{{ teh.Harakter }}">Описание: {{ teh.Harakter | limitTo:50 }}</p>
         </div>
+        <button class="bay" type="button">КУПИТЬ</button>
     </div>
 </div>
